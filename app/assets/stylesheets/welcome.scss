@@ -1,0 +1,228 @@
+body{
+	
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+*{
+	margin: auto;
+}
+/*control*/
+.search-section{
+	display: block;
+}
+.player{
+	display: none;
+}
+/*search*/
+.overlay{
+	width: 100%;
+	height: 100%;
+	background-color:#144E8F;
+	position: fixed;
+	top:0;
+}
+.search{
+	width: 100%;
+	height: 79px;
+	box-shadow: 0px 1px 0 0 rgba(255,255,255,0.12) inset,
+				0px -1px 0 0 rgba(255,255,255,0.12) inset,
+				0 0 2px 0 rgba(0,0,0,0.12),
+				0 0 4px 0 rgba(0,0,0,0.26);
+	position: relative;
+	z-index: 1;
+	background-color:#144E8F;
+}
+.search form{
+}
+form svg{
+	position: relative;
+	top:39px;
+	margin-left:5%;
+}
+form svg path:last-child{
+	fill:#fff;
+}
+form input{
+	width: auto;
+	height:24px; 
+	border:none;
+	padding: 0;
+	background-color: rgba(255,255,255,0);
+	position: relative;
+	top:33px; left:28px;
+}
+input[type=text]{
+	color:#fff;
+	font-size: 20px;
+	font-weight: 200;
+}
+.list-song{
+	width: 100%;
+	position:relative;
+	bottom:8px;
+	padding-bottom: 8px;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.4);
+}
+.list-song ul{
+	position: relative;
+	top:8px;
+	padding: 0px;
+}
+.list-song ul li{
+	width: 100%;
+	color:#fff;
+	list-style: none;
+	line-height: 1;
+	margin-top:8px;
+	padding: 20px 0 20px 0;
+
+}
+.list-song ul li h1{
+	font-size:17px;
+	font-weight: 400;
+	position: relative;
+	bottom:4px;
+	margin-left: 5%;
+}
+.list-song ul li h2{
+	font-size: 15px;
+	font-weight: 200;
+	opacity: 0.7;
+	position: relative;
+	top:6px; 
+	margin-left: 5%;
+}
+/*player*/
+.cover{
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+.cover img{
+	width: 100%;
+	height: 100%;
+}
+.cover .overlay{
+	width:100%;
+	height:100%;
+	background: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(255,255,255,0));
+	position:fixed;
+	top:0;
+	z-index: 1;
+}
+.control{
+	width: 100%;
+	position:fixed;
+	bottom:10px;
+	z-index: 10;
+}
+.control .button{
+	width:33.33%;
+	height:100%;
+	float:left;
+	text-align: center;
+}
+.control .button path:last-child{
+	fill:#fff;
+	opacity:0.4;
+}
+.control .button h1{
+	color:#fff;
+	opacity:0.4;
+	font-size: 11px;
+	font-weight: 200;
+}
+.control .play h1{
+	opacity: 1;
+}
+.control .play path:last-child{
+	opacity:1;
+}
+.player{
+	position: relative;
+	bottom:16px;
+	clear: both;
+}
+.player #all{
+	width:90%;
+	opacity: 0.4;
+	position: relative;
+}
+.player #played{
+	width:50%;
+	position: relative;
+	bottom:2px;
+	right:20%;
+}
+.player .circle{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 100%;
+	position: relative;
+	top:7px;
+	left: 12px;
+	z-index: 10;
+	clear: both;
+}
+.player p{
+	color:#fff;
+	font-size: 11px;
+	font-weight: 200;
+	position: relative;
+	top:7px;
+
+}
+.player #start{
+	float: left;
+	position: relative;
+	left:5%;
+}
+.player #end{
+	float: right;
+	position: relative;
+	right:5%;
+}
+.border{
+	width:56px;
+	height:56px;
+	border-radius:3px;
+	box-shadow: 0px 0px 0 1px rgba(0,0,0,0.12),
+				0 0 2px 0 rgba(0,0,0,0.12),
+				0 0 4px 0 rgba(0,0,0,0.26);
+	float: left;
+	position: relative;
+	left:5%;
+	bottom: 14px;
+}
+.border-inside{
+	width:100%;
+	height:56px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0 1px rgba(255,255,255,0.12) inset;
+
+}
+.border img{
+	width:100%;
+	height:56px;
+	position: relative;
+	bottom:56px;
+}
+.songs h1{
+	font-size: 17px;
+	font-weight: 400;
+	color:#fff;
+	position: relative;
+	left:7%;
+	bottom:10px;
+}
+.songs h2{
+	font-size: 15px;
+	font-weight: 200;
+	color:#fff;
+	opacity: 0.7;
+	position: relative;
+	left:7%;
+	bottom: 4px;
+}
